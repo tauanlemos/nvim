@@ -8,7 +8,6 @@ return require('packer').startup(function(use)
   use 'wbthomason/packer.nvim'
   use 'mfussenegger/nvim-dap'
 
-  use 'neoclide/coc.nvim'
   use {
           'nvim-telescope/telescope.nvim', tag = '0.1.4',
           -- or                            , branch = '0.1.x',
@@ -20,11 +19,12 @@ return require('packer').startup(function(use)
 		vim.cmd('colorscheme moonfly')
 	end
 	}
-   use('nvim-treesitter/nvim-treesitter', {run = ':TSUpdate'})
+   use({'nvim-treesitter/nvim-treesitter', run = ':TSUpdate'})
    use('nvim-treesitter/playground')
    use('theprimeagen/harpoon')
    use('mbbill/undotree')
    use('tpope/vim-fugitive')
+   use('hashivim/vim-terraform')
 
    use {
 	  'VonHeikemen/lsp-zero.nvim',
