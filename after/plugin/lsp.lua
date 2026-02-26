@@ -4,7 +4,7 @@ lsp.preset('recommended')
 lsp.ensure_installed({
   'tsserver',
   'eslint',
-  'golangci_lint_ls'
+  --'golangci_lint_ls'
 })
 
 -- Fix Undefined global 'vim'
